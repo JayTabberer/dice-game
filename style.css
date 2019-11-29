@@ -15,6 +15,10 @@
     background-color: rgb(167, 3, 3);
 }
 
-.image {
-    
+.player {
+    float: left;
+}
+
+.player.two{
+    margin-left: 100px;
 }
