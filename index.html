@@ -6,29 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Dice game</title>
-    <style>
-        button {
-            width:200px;
-            height:30px;
-            background-color:red;
-            color:white;
-            border:1px solid rgb(143, 2, 2);
-            border-radius: 5px;
-            outline:none;
-        }
-        button:hover {
-            background-color: rgb(202, 0, 0);
-        }
-        button:active {
-            background-color: rgb(167, 3, 3);
-        }
-    </style>
+    
 </head>
+
 <body>
-    <p id="dice"></p>
+    <div class="score display-one">
+        <h3>Player one score</h3>
+        <p id="player1score"></p>
+    </div>
+
+    <div class="score display-two">
+            <h3>Player two score</h3>
+            <p id="player2score"></p>
+    </div>
+    <!-- <p class="score player-one"></p> -->
     <br>
-    <img id='image' src="image1.png"></br>
-    <button id="button">Button to press</button>
+
+    <div class="dice-images"></div>
+        <img class="image player-one-image" src="image1.png">
+        <img class="image player-two-image" src="image1.png">
+    </div>
+    
+    <div class="player-buttons">
+        <button class="button player-one">Player 1 press to roll</button>
+        <button class="button player-two">Player 2 press to roll</button>
+    </div>  
 
 <script src="script.js"></script>
 </body>
